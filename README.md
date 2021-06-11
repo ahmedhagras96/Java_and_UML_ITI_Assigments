@@ -18,9 +18,9 @@ https://www.kaggle.com/lsind18/egyptianpyramids
 *   -Build a Main class to use PyramidCSVDAO class and print the basic data about each pyramid.
 
 
-## 1- Lab Exercise 1
+## 2- Lab Exercise 1
 
-### Make Dictionary for Countries and Sorted list of Cities by poplution
+### Make Dictionary for Countries and Sorted list of Cities by population
 
 ### Requirments
 
