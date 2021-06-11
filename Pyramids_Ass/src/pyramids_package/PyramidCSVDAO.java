@@ -46,8 +46,7 @@ public class PyramidCSVDAO implements pyramidDAO {
             String line =lines.get(lineIdx);
             String[] fields = line.split(",");
             for(int fieldIndex =0; fieldIndex < fields.length; fieldIndex++){
-                fields[fieldIndex] = fields[fieldIndex].trim();
-                
+                fields[fieldIndex] = fields[fieldIndex].trim(); 
             }
             Pyramid Pyramid = new Pyramid(fields[0],fields[2],fields[4],fields[7]);
             Pyramids.add(Pyramid);
