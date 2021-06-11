@@ -1,4 +1,4 @@
-## Java_and_UML_ITI_Assigments
+# Java_and_UML_ITI_Assigments
 
 ## 1- File handling and data extraction Assignment
 
@@ -17,5 +17,19 @@ https://www.kaggle.com/lsind18/egyptianpyramids
       Do not forget to validate the values you make all needed conversion
 *   -Build a Main class to use PyramidCSVDAO class and print the basic data about each pyramid.
 
+
+## 1- Lab Exercise 1
+
+### Make Dictionary for Countries and Sorted list of Cities by poplution
+
+### Requirments
+
+* Develop and application that reads two files for cities and countries
+and store each in a List.
+* Each city entry contains code, name, continent, Surface Area,
+population
+* Create a map that uses the country code as keys and a list of cities as
+the value for each country.
+* For a given country code sort the cities according to the population
 
 
