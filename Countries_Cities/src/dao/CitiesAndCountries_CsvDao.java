@@ -39,7 +39,7 @@ public class CitiesAndCountries_CsvDao implements CitiesAndCountries_DAO {
             for(int fieldIndex =0; fieldIndex < fields.length; fieldIndex++){
                 fields[fieldIndex] = fields[fieldIndex].trim(); 
             }
-            City City = new City(fields[6],fields[0],fields[4],fields[8],Integer.parseInt(fields[7]));            
+            City City = new City(fields[0],fields[1],fields[7],fields[6],Integer.parseInt(fields[5]),fields[4]);            
             Cities_list.add(City);
         };
         

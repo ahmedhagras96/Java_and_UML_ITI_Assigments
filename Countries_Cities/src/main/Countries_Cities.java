@@ -10,7 +10,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import dao.CitiesAndCountries_DAO;
-
+import java.util.LinkedHashMap;
+import java.util.stream.Collectors;
+import java.util.Optional;
 
 public class Countries_Cities {
 
@@ -56,11 +58,65 @@ public class Countries_Cities {
              countriesMap.put(Co.getName(), countryCities);
          }
          
-         //printing countriesMap 
+         
+         
+//       printing countriesMap 
          System.out.println("\n//////////////////////////////////////////////\n");
          countriesMap.forEach((k, v) ->
                 System.out.println("key=" + k + ", value=" + v));
          
+         
+         Map<String, String> countriesFromCode = new HashMap<>();
+         for(Country Co:Countries){
+             String Country = new String();
+             for(City C:Cities){
+                 if (Co.getCode().equals(C.getCode())){
+                     Country = Co.getName();
+                 } 
+             }
+             countriesFromCode.put(Co.getCode(), Country);
+         }
+         
+         //working in stream Excercise 3   
+         //get max poplution city in every country
+            Map<String, City> HieghtestCountryCityPop =  
+                Cities.stream().collect(
+                    Collectors.groupingBy(City::getCode,
+                        Collectors.collectingAndThen(
+                            Collectors.reducing((City d1, City d2) -> d1.getPopulation() > d2.getPopulation() ? d1 : d2),
+                                Optional::get)));
+            
+            
+            System.out.println("\n//////////////////////////////////////////////\n");
+            HieghtestCountryCityPop.forEach((k, v) ->
+            System.out.println("For Country : " + countriesFromCode.get(k)+ ", max populotion city : " + v.getName()));
+            
+            //get max poplution city in every Contient
+            Map<String, City> HieghtestContinentCityPop =  
+                Cities.stream().collect(
+                    Collectors.groupingBy(City::getContinent,
+                        Collectors.collectingAndThen(
+                            Collectors.reducing((City d1, City d2) -> d1.getPopulation() > d2.getPopulation() ? d1 : d2),
+                                Optional::get)));
+            
+            System.out.println("\n//////////////////////////////////////////////\n");
+            HieghtestContinentCityPop.forEach((k, v) ->
+                System.out.println("For Continent : " + k+ ", max populotion city : " + v.getName()));
+            
+            //get max poplution Capital 
+            City HieghtestCapitalPop =  
+                Cities.stream()
+                      .filter(City::IsCapital)
+                      .max(Comparator.comparingInt(City::getPopulation))
+                      .get();
+            
+            System.out.println("\n//////////////////////////////////////////////\n");
+            System.out.println("Max poploution capital is: " + HieghtestCapitalPop.getName());
+               
+        
+
     }
+    
+    
     
 }

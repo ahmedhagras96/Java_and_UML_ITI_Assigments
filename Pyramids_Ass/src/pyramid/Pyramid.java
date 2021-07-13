@@ -10,9 +10,10 @@ package pyramid;
  * @author Ahmed Hagras
  */
 public class Pyramid {
-    private String pharaoh,modern_name,site,height;
+    private String pharaoh,modern_name,site;
+    private double height;
     
-    public Pyramid(String pharaoh, String modern_name, String site, String height) {
+    public Pyramid(String pharaoh, String modern_name, String site, double height) {
         this.pharaoh = pharaoh;
         this.modern_name = modern_name;
         this.site = site;
@@ -32,7 +33,7 @@ public class Pyramid {
         return site;
     }
 
-    public String getHeight() {
+    public double getHeight() {
         return height;
     }
 
@@ -48,7 +49,7 @@ public class Pyramid {
         this.site = site;
     }
 
-    public void setHeight(String height) {
+    public void setHeight(double height) {
         this.height = height;
     }
     

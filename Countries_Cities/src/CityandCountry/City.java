@@ -10,15 +10,22 @@ package CityandCountry;
  * @author Ahmed Hagras
  */
 public class City {
-    private String code, name, continent, Surface_Area;
+    private String code, name, continent,Surface_Area,capital;
     private int population;
+    private boolean isCapital;
 
-    public City(String code, String name, String continent, String Surface_Area, int population) {
+    public City(String code, String name, String continent, String Surface_Area, int population,String Capital) {
         this.code = code;
         this.name = name;
         this.continent = continent;
         this.Surface_Area = Surface_Area;
         this.population = population;
+//        this.capital = IsCapital;
+        if (Capital.equals("yes")){
+            this.isCapital = true;
+        }else{
+            this.isCapital = false;
+        }
     }
 
     public String getCode() {
@@ -61,5 +68,16 @@ public class City {
         this.population = population;
     }
     
-    
+    public boolean IsCapital() {
+        return isCapital;
+    }
+
+    public void setIsCapital(String capital) {
+        if (capital.equals("yes")){
+            this.isCapital = true;
+        }else{
+            this.isCapital = false;
+        }
+        
+    }
 }
