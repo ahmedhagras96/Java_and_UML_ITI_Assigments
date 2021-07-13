@@ -58,7 +58,7 @@ only alphabets or not.
 
 ## 4- Lab Exercise 3
 
-## Using streams in exercise one
+## Implementing streams in exercise one
 ### Project Name That task implmented in: Countries_Cities
 
 ### Requirments
@@ -69,3 +69,32 @@ to get the following:
     * Highest population city by continent
     * Highest population capital
 
+## Lab Exercise 4
+
+## Implementing streams in Pyramids project
+### Project Name That task implmented in: Pyramids_Ass
+
+### Requirments
+
+* For the given data set used in JUPAI3 compute the median,
+average, quartile of the dataset based on one of the available
+characteristics.
+* Hint:
+    * The median divides the data into a lower half and an upper half.
+    * The lower quartile is the middle value of the lower half.
+    * The upper quartile is the middle value of the upper half.
+
+## Lab Exercise 5
+
+## Journy and Tablesaw
+### Project Name That task implmented in: Titanic EDA
+
+### Requirments
+
+* load the Titanic data set provided as a csv file
+* Using joinery and Tablesaw perform some data exploration activities
+such as getting information about the data (min, max, standard
+deviation, etc.)
+* Create 2 DataFrame Objects and try to join, merge, add columns of
+specific datatypes to both DataFrames (perform these activities using
+both libraries)
