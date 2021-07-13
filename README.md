@@ -8,15 +8,15 @@ Deal with Egyptian Pyramids CSV dataset.
 
 https://www.kaggle.com/lsind18/egyptianpyramids
 
-1.  Prepare it and print the basic data about each pyramid.
-2.  Explore the dataset (CSV file) and understand it’s parts
-3.  Dataset preparation/transformation
+*  Prepare it and print the basic data about each pyramid.
+*  Explore the dataset (CSV file) and understand it’s parts
+*  Dataset preparation/transformation
      * Build a Pyramid class to define a prototype for all information you will extract from CSV for each pyramid
      * Build a PyramidCSVDAO class to:
         * Read pyramids.csv file.
         * Create List of Pyramids objects for each pyramid in the csv file
         * Validate the values you make all needed conversion
-4.  Build a Main class to use PyramidCSVDAO class and print the basic data about each pyramid.
+     * Build a Main class to use PyramidCSVDAO class and print the basic data about each pyramid.
 
 
 ## 2- Lab Exercise 1
@@ -48,10 +48,10 @@ is “better”
 function given by the lambda returns true, the betterString
 method should return the first String, otherwise betterString
 should return the second String.
-• String string1 = ...;
-• String string2 = ...;
-• String longer = StringUtils.betterString(string1, string2, (s1, s2) -> s1.length() > s2.length());
-• String first = StringUtils.betterString(string1, string2, (s1, s2) -> true);
+    * String string1 = ...;
+    * String string2 = ...;
+    * String longer = StringUtils.betterString(string1, string2, (s1, s2) -> s1.length() > s2.length());
+    * String first = StringUtils.betterString(string1, string2, (s1, s2) -> true);
 * Given a String, the task is to check whether a string contains
 only alphabets or not.
 * Use isLetter() method of Character class.
@@ -65,7 +65,7 @@ only alphabets or not.
 
 * Using the classes created in exercise 1 provide classes or methods
 to get the following:
-• Highest population city of each country
-• Highest population city by continent
-• Highest population capital
+    * Highest population city of each country
+    * Highest population city by continent
+    * Highest population capital
 
