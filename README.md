@@ -21,7 +21,8 @@ https://www.kaggle.com/lsind18/egyptianpyramids
 
 ## 2- Lab Exercise 1
 
-### Make Dictionary for Countries and Sorted list of Cities by population
+## Make Dictionary for Countries and Sorted list of Cities by population
+### Project Name That task implmented in: Countries_Cities
 
 ### Requirments
 
@@ -33,4 +34,38 @@ population
 the value for each country.
 * For a given country code sort the cities according to the population
 
+## 3- Lab Exercise 2
+
+## Make a betterString method
+### Project Name That task implmented in: BetterString
+
+### Requirments
+
+* The goal is to make a method called betterString that takes
+two Strings and a lambda that says whether the first of the two
+is “better”
+* The method should return that better String; i.e., if the
+function given by the lambda returns true, the betterString
+method should return the first String, otherwise betterString
+should return the second String.
+• String string1 = ...;
+• String string2 = ...;
+• String longer = StringUtils.betterString(string1, string2, (s1, s2) -> s1.length() > s2.length());
+• String first = StringUtils.betterString(string1, string2, (s1, s2) -> true);
+* Given a String, the task is to check whether a string contains
+only alphabets or not.
+* Use isLetter() method of Character class.
+
+## 4- Lab Exercise 3
+
+## Using streams in exercise one
+### Project Name That task implmented in: Countries_Cities
+
+### Requirments
+
+* Using the classes created in exercise 1 provide classes or methods
+to get the following:
+• Highest population city of each country
+• Highest population city by continent
+• Highest population capital
 
